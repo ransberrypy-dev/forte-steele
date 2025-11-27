@@ -64,7 +64,7 @@
     display: flex;
     justify-content: space-between;
     position: absolute;
-    bottom: 0;
+    bottom: 52px;
     left: 0;
     right: 0;
     padding: 2rem;
@@ -82,12 +82,12 @@
 }
 
 .card-description {
-    font-size: 0.95rem;
+    font-size: 1.2rem;
     line-height: 1.6;
     margin: 0;
     color: rgba(255, 255, 255, 0.95);
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
-    max-width: 400px;
+    max-width: 500px;
 }
 
 .service-card.large-card .card-content {
@@ -99,7 +99,7 @@
 }
 
 .service-card.large-card .card-description {
-    font-size: 1rem;
+    font-size: 1.2rem;
     max-width: 500px;
 }
 
