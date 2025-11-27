@@ -1,0 +1,32 @@
+<section class="leadership-section">
+  <div class="leadership-container">
+    <div class="header-row">
+      <h2 class="section-title">OUR<br>LEADERSHIP</h2>
+      <p class="section-description">
+        Lorem ipsum dolor sit amet, consectetuer<br>
+        adipiscing elit, sed diam
+      </p>
+    </div>
+
+    <div class="leadership-content">
+      <div class="sidebar">
+        <div class="meet-team">
+          <span class="meet-text">Meet<br>the team</span>
+          <div class="meet-underline"></div>
+        </div>
+      </div>
+
+      <div class="leader-card-wrapper">
+        <div class="leader-card">
+          <div class="leader-image-wrapper">
+            <img [src]="leaders[0].image" [alt]="leaders[0].name" class="leader-image">
+          </div>
+          <div class="leader-info">
+            <h3 class="leader-name">{{ leaders[0].name }}</h3>
+            <p class="leader-title">{{ leaders[0].title }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

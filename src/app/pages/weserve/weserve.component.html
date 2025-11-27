@@ -1,0 +1,43 @@
+<div class="content">
+    <section class="industries-section">
+        <!-- Hero Section -->
+        <div class="industries-hero">
+            <img src="/img/slider1.jpg" alt="Industries" class="hero-image">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">INDUSTRIES<br>WE SERVE</h1>
+            </div>
+        </div>
+
+        <!-- Industries List Section -->
+        <div class="industries-list-section">
+            <div class="industries-container">
+                <div class="intro-text">
+                    <p>Forte Steel supports a diverse range<br>of industries, including:</p>
+                </div>
+
+                <div class="industries-list">
+                    <div class="industry-item" *ngFor="let industry of industries">
+                        <span class="industry-number">{{ industry.number }}</span>
+                        <span class="industry-name">{{ industry.name }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Why Choose Us Section -->
+        <div class="why-choose-section">
+            <h2 class="section-title">WHY CHOOSE FORTE STEEL?</h2>
+
+            <div class="reasons-list">
+                <div class="reason-item" *ngFor="let reason of reasons">
+                    <div class="reason-number">{{ reason.number }}</div>
+                    <div class="reason-content">
+                        <h3 class="reason-title">{{ reason.title }}</h3>
+                        <p class="reason-description">{{ reason.description }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

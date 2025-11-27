@@ -1,0 +1,6 @@
+.jumbotron{
+    margin-top: 65px;
+    >img{
+        width: 1200px;
+    }
+}

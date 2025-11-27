@@ -1,0 +1,14 @@
+.main {
+    font-family: "Poppins", sans-serif;
+    /* font-weight: 400; */
+    font-style: normal;
+}
+
+.about-us {
+    background-color: #226095;
+    color: white;
+
+    h2 {
+        color: white;
+    }
+}

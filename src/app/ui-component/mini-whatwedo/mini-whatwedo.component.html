@@ -1,0 +1,34 @@
+<section  class="what-we-do-section">
+    <div class="container">
+        <div class="header-row">
+            <h2 class="section-title">WHAT WE DO</h2>
+            <p class="section-description">
+                At Forte Steel, we offer a comprehensive range of<br>
+                steel fabrication services, including:
+            </p>
+            <div class="slider-buttons">
+                <button class="nav-btn" (click)="prevSlide()" [disabled]="currentIndex === 0">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="nav-btn" (click)="nextSlide()"
+                    [disabled]="currentIndex >= services.length - itemsToShow">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="carousel-wrapper">
+            <div class="carousel-track" [style.transform]="'translateX(-' + (currentIndex * slideWidth) + '%)'">
+                <div class="slide-item" *ngFor="let service of services" [style.flex]="'0 0 ' + slideWidth + '%'">
+                    <div class="service-card">
+                        <div class="image-container">
+                            <img [src]="service.image" [alt]="service.title">
+                            <div class="overlay"></div>
+                        </div>
+                        <h4 class="service-title">{{ service.title }}</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

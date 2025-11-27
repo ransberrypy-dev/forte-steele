@@ -1,0 +1,63 @@
+<section data-aos="zoom-out-down" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+class="contact-section aos-init aos-animate ">
+    <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" 
+    class="container aos-init aos-animate">
+        <h2 class="contact-title">CONTACT US</h2>
+
+        <form class="contact-form" (ngSubmit)="onSubmit()">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" [(ngModel)]="formData.fullName" name="fullName" class="form-input">
+                </div>
+
+                <div class="form-group">
+                    <label for="company">Company</label>
+                    <input type="text" id="company" [(ngModel)]="formData.company" name="company" class="form-input">
+                </div>
+            </div>
+
+            <div class="form-row full-width">
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" [(ngModel)]="formData.address" name="address" class="form-input">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" [(ngModel)]="formData.phone" name="phone" class="form-input">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" [(ngModel)]="formData.email" name="email" class="form-input">
+                </div>
+            </div>
+
+            <div class="form-row full-width">
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" [(ngModel)]="formData.message" name="message" rows="4"
+                        class="form-input form-textarea"></textarea>
+                </div>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="info-section">
+            <div class="info-card address-card">
+                <h3 class="info-label">Address</h3>
+                <p class="info-text">East Legon,<br>14 Parship Street</p>
+            </div>
+
+            <div class="info-card contact-card">
+                <h3 class="info-label">Get intouch</h3>
+                <p class="info-text phone">Tel: 0209542696</p>
+                <p class="info-text email">roderick&#64;forte-steel.com</p>
+                <p class="info-text website">Forte-Steel.com</p>
+            </div>
+        </div>
+    </div>
+</section>
