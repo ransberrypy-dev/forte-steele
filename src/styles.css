@@ -1,6 +1,6 @@
 You can add global styles to this file, and also import other style files
 :root {
-    --default-font: Montserrat;
+    --default-font: 'Poppins';
     --heading-font: "Jost", sans-serif;
     --nav-font: "Poppins", sans-serif
 }

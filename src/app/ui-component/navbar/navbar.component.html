@@ -1,4 +1,4 @@
-<header id="header" class="header d-flex align-items-center fixed-top">
+<!-- <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-width container-xl position-relative d-flex align-items-center"><a routerlink="/"
             class="logo d-flex align-items-center me-auto" href="/"><img src="/img/logo.png" alt=""
                 class="img-fluid"></a>
@@ -12,4 +12,45 @@
             </ul><i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
     </div>
+</header> -->
+
+<header id="header" class="header fixed-top">
+    <div class="container d-flex align-items-center justify-content-between px-4">
+        <a routerLink="/" class="logo">
+            <img src="/img/logo_1.png" alt="Forte Steel Logo">
+        </a>
+
+        <button class="hamburger d-lg-none" [class.active]="isMobileMenuOpen" (click)="toggleMobileMenu()"
+            aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="desktop-nav d-none d-lg-flex">
+            <ul>
+                <li><a routerLink="/about-us" routerLinkActive="active">About Us</a></li>
+                <li><a routerLink="/whatwedo" routerLinkActive="active">What we do</a></li>
+                <li><a routerLink="/servedindustries" routerLinkActive="active">Industries We Serve</a></li>
+                <li><a routerLink="/leadership" routerLinkActive="active">Our Leadership</a></li>
+                <li><a routerLink="/contact" routerLinkActive="active">Contact us</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
+
+<!-- Mobile Menu Overlay -->
+<div class="mobile-overlay" [class.show]="isMobileMenuOpen" (click)="closeMobileMenu()">
+</div>
+
+<!-- Mobile Menu Sidebar -->
+<nav class="mobile-nav d-lg-none" [class.show]="isMobileMenuOpen">
+    <ul>
+        <li><a routerLink="/about-us" routerLinkActive="active" (click)="closeMobileMenu()">About Us</a></li>
+        <li><a routerLink="/whatwedo" routerLinkActive="active" (click)="closeMobileMenu()">What we do</a></li>
+        <li><a routerLink="/servedindustries" routerLinkActive="active" (click)="closeMobileMenu()">Industries We
+                Serve</a></li>
+        <li><a routerLink="/leadership" routerLinkActive="active" (click)="closeMobileMenu()">Our Leadership</a></li>
+        <li><a routerLink="/contact" routerLinkActive="active" (click)="closeMobileMenu()">Contact us</a></li>
+    </ul>
+</nav>
